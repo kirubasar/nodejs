@@ -1,2 +1,3 @@
-Hello, Node.js 
-Hello, Backhand
+dirname: gets the parent folder of a file
+basename: gets the filename part
+extname: gets the file extension

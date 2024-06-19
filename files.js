@@ -1,11 +1,11 @@
 
 const fs = require('fs');
 
-const message = "Hello, Backhand";
-fs.appendFile('hello.txt', message, (error)=>{
-    if(error){
-        console.error('Error writing to file');
+
+fs.readFile('hello.txt', 'utf-8', (err, data)=>{
+    if(err){
+        console.log('Error reading file', err);
     } else {
-        console.log('File written successfully');
+        console.log(data);
     }
 })
