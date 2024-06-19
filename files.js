@@ -2,10 +2,10 @@
 const fs = require('fs');
 
 
-fs.readFile('hello.txt', 'utf-8', (err, data)=>{
+fs.unlink('hello.txt',  (err)=>{
     if(err){
-        console.log('Error reading file', err);
+        console.log(err);
     } else {
-        console.log(data);
+        console.log('file deleted');
     }
 })
